@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Moza Store - Service HP</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================================
+         HEADER
+    ================================= -->
+
+    <header class="header">
+
+        <div class="header-content">
+
+            <div class="brand">
+
+                <div class="logo">
+                <img src="logo.jpg" alt="Moza Store">
+                </div>
+
+                <div class="brand-text">
+                    <h1>MOZA STORE</h1>
+                    <span>Service & Repair</span>
+                </div>
+
+            </div>
+
+            <div class="header-status">
+                <span class="status-dot"></span>
+                Service Center
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================================
+         MAIN
+    ================================= -->
+
+    <main class="container">
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <span class="hero-label">
+                    MOZA STORE
+                </span>
+
+                <h2>
+                    Service HP dengan<br>
+                    <strong>lebih mudah & rapi.</strong>
+                </h2>
+
+                <p>
+                    Kelola data service pelanggan,
+                    keluhan, tanggal masuk, dan foto HP
+                    dalam satu tempat.
+                </p>
+
+            </div>
+
+            <div class="hero-icon">
+                📱
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             TAMBAH SERVICE
+        ================================= -->
+
+        <button
+            id="btnTambah"
+            class="btn-tambah"
+        >
+
+            <span class="plus-icon">+</span>
+
+            <span>
+                Tambah Data Service
+            </span>
+
+        </button>
+
+
+        <!-- ================================
+             FORM SERVICE
+        ================================= -->
+
+        <div
+            id="formService"
+            class="card form-card hidden"
+        >
+
+            <div class="card-header">
+
+                <div>
+
+                    <span class="section-label">
+                        DATA BARU
+                    </span>
+
+                    <h2>
+                        Tambah Data Service
+                    </h2>
+
+                </div>
+
+                <div class="form-icon">
+                    🔧
+                </div>
+
+            </div>
+
+
+            <div class="form-grid">
+
+
+                <!-- NAMA -->
+
+                <div class="form-group">
+
+                    <label for="nama">
+                        Nama Pelanggan
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nama"
+                        placeholder="Masukkan nama pelanggan"
+                    >
+
+                </div>
+
+
+                <!-- NO HP -->
+
+                <div class="form-group">
+
+                    <label for="noHp">
+                        No HP
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="noHp"
+                        placeholder="Masukkan nomor HP"
+                    >
+
+                </div>
+
+
+                <!-- KELUHAN -->
+
+                <div class="form-group full">
+
+                    <label for="keluhan">
+                        Keluhan HP
+                    </label>
+
+                    <textarea
+                        id="keluhan"
+                        placeholder="Contoh: HP mati total, LCD pecah, baterai cepat habis..."
+                    ></textarea>
+
+                </div>
+
+
+                <!-- TANGGAL -->
+
+                <div class="form-group">
+
+                    <label for="tanggal">
+                        Tanggal Masuk
+                    </label>
+
+                    <input
+                        type="date"
+                        id="tanggal"
+                    >
+
+                </div>
+
+
+                <!-- FOTO -->
+
+                <div class="form-group">
+
+                    <label for="foto">
+                        Foto HP
+                    </label>
+
+                    <input
+                        type="file"
+                        id="foto"
+                        accept="image/*"
+                    >
+
+                    <small>
+                        JPG, PNG atau gambar lainnya
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- BUTTON -->
+
+            <div class="form-actions">
+
+                <button
+                    id="btnBatal"
+                    class="btn-batal"
+                >
+                    Batal
+                </button>
+
+                <button
+                    id="btnSimpan"
+                    class="btn-simpan"
+                >
+                    Simpan
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================================
+             DATA SERVICE
+        ================================= -->
+
+        <section class="card data-card">
+
+            <div class="card-header">
+
+                <div>
+
+                    <span class="section-label">
+                        DATABASE SERVICE
+                    </span>
+
+                    <h2>
+                        Data Service
+                    </h2>
+
+                </div>
+
+                <div class="database-icon">
+                    🗂️
+                </div>
+
+            </div>
+
+
+            <div id="dataContainer">
+
+                <div class="empty">
+
+                    <div class="empty-icon">
+                        📋
+                    </div>
+
+                    <h3>
+                        Belum ada data service
+                    </h3>
+
+                    <p>
+                        Data service pelanggan akan muncul di sini.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+
+    <footer>
+
+            <div class="logo">
+            <img src="logo.jpg" alt="Moza Store">
+            </div>
+
+        <div>
+
+            <strong>
+                MOZA STORE
+            </strong>
+
+            <span>
+                Service & Repair
+            </span>
+
+        </div>
+
+        <p>
+            © 2026 Moza Store
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script
+        type="module"
+        src="script.js"
+    ></script>
+
+</body>
+
+</html>

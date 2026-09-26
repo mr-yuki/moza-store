@@ -7,7 +7,7 @@ import { fileURLToPath } from "url";
 dotenv.config();
 
 const app = express();
-const PORT = 3000;
+
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -35,6 +35,6 @@ app.get("/auth", (req, res) => {
     }
 });
 
-app.listen(PORT, () => {
-    console.log(`Server berjalan di http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`Server berjalan di port ${PORT}`);
 });
